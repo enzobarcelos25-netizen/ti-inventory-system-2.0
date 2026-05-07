@@ -1,20 +1,35 @@
 # TI Inventory System 2.0
 
-Sistema de inventario de TI criado para organizar computadores, equipamentos e informacoes de ambiente corporativo.
+Sistema full stack para inventario de ativos de TI, combinando front-end, back-end, scripts Python e planilha de apoio.
 
-O projeto combina front-end, back-end e scripts auxiliares para treinar uma arquitetura mais proxima de um sistema real usado por suporte ou infraestrutura.
+<p align="center">
+  <img src="https://img.shields.io/badge/React-111?style=for-the-badge&logo=react" alt="React" />
+  <img src="https://img.shields.io/badge/Node.js-111?style=for-the-badge&logo=node.js" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Python-111?style=for-the-badge&logo=python" alt="Python" />
+</p>
 
-## Objetivo
+## Visao geral
 
-Centralizar o cadastro e a consulta de ativos de TI, reduzindo controle manual em planilhas soltas e criando base para futuras automacoes.
+O projeto foi criado para simular uma necessidade comum em suporte e infraestrutura: controlar equipamentos, dados de inventario e informacoes operacionais sem depender apenas de planilhas manuais.
+
+Ele mostra a transicao entre conhecimento de TI corporativa e desenvolvimento: interface web, API, arquivos de dados e scripts auxiliares trabalhando no mesmo fluxo.
+
+## Destaques
+
+- Projeto aplicado a um problema real de TI.
+- Separacao entre front-end e back-end.
+- Scripts Python para apoio operacional.
+- Base em planilha para aproximar o projeto de cenarios reais.
+- Repositorio limpo de dependencias versionadas (`node_modules` removido).
 
 ## Funcionalidades atuais
 
-- Front-end em React para visualizar e cadastrar informacoes.
-- Back-end em Node.js para servir dados e endpoints.
-- Scripts Python para apoio em scanner e manipulacao de planilha.
-- Arquivo `inventario.xlsx` usado como base de dados inicial/apoio.
-- Componentes separados para dashboard, formulario e integracao com API.
+- Dashboard React para visualizar informacoes.
+- Componentes para formulario e cadastro.
+- Servico de API no front-end.
+- Back-end Node.js com `server.js`.
+- Scripts Python para scanner e manipulacao de planilha.
+- Arquivo `inventario.xlsx` como base inicial.
 
 ## Stack
 
@@ -25,7 +40,7 @@ Centralizar o cadastro e a consulta de ativos de TI, reduzindo controle manual e
 - Python
 - Excel/planilhas
 
-## Estrutura principal
+## Estrutura
 
 ```txt
 ti-inventory-system-2.0/
@@ -36,7 +51,10 @@ ti-inventory-system-2.0/
     src/
       Dashboard.jsx
       components/
-      services/api.js
+        Copilot.jsx
+        PCForm.jsx
+      services/
+        api.js
   python/
     scanner.py
     scanner_auto.py
@@ -46,7 +64,7 @@ ti-inventory-system-2.0/
 
 ## Como rodar
 
-### Back-end
+Back-end:
 
 ```bash
 cd backend
@@ -54,7 +72,7 @@ npm install
 npm run dev
 ```
 
-### Front-end
+Front-end:
 
 ```bash
 cd frontend
@@ -64,18 +82,20 @@ npm run dev
 
 ## Organizacao aplicada
 
-- README raiz criado para explicar objetivo, stack e estrutura.
-- `.gitignore` adicionado na raiz.
+- README raiz criado.
+- `.gitignore` adicionado.
 - `backend/node_modules` removido do versionamento.
+- Estrutura principal documentada.
 
-## Proximos ajustes recomendados
+## Proximos passos
 
-- Criar `.env.example` para variaveis de ambiente, se houver.
 - Padronizar scripts de start no `package.json` raiz.
-- Documentar os endpoints do back-end.
+- Documentar endpoints do back-end.
+- Criar `.env.example`, se houver variaveis de ambiente.
 - Adicionar prints da interface.
 - Avaliar arquivos vazios dentro de `python/`.
+- Evoluir persistencia para banco de dados.
 
 ## Status
 
-Projeto em evolucao para portfolio e pratica de sistema full stack aplicado a TI corporativa.
+Projeto em evolucao para portfolio, com foco em desenvolvimento web aplicado a TI corporativa.
