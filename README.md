@@ -62,15 +62,19 @@ npm install
 npm run dev
 ```
 
-## Observacoes de organizacao
+## Organizacao aplicada
 
-Este repositorio ainda pode evoluir em limpeza tecnica. Proximos ajustes recomendados:
+- README raiz criado para explicar objetivo, stack e estrutura.
+- `.gitignore` adicionado na raiz.
+- `backend/node_modules` removido do versionamento.
 
-- Remover `node_modules` versionado e manter apenas `package.json` / `package-lock.json`.
+## Proximos ajustes recomendados
+
 - Criar `.env.example` para variaveis de ambiente, se houver.
 - Padronizar scripts de start no `package.json` raiz.
 - Documentar os endpoints do back-end.
 - Adicionar prints da interface.
+- Avaliar arquivos vazios dentro de `python/`.
 
 ## Status
 
